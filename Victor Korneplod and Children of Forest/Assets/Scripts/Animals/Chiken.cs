@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chiken : MonoBehaviour
+public class Chiken : Animal
 {
-    // Start is called before the first frame update
-    void Start()
+    protected override void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        DMG = 0;
+        other.GetComponent<Lizard>().HalfHp();
+        base.OnTriggerEnter(other);
     }
 }

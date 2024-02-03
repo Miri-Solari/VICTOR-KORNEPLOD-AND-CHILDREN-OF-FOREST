@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wolf : MonoBehaviour
+public class Wolf : Animal
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private float _dmgMulti;
+    protected override void OnTriggerEnter(Collider other)
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.TryGetComponent<Hangover>(out Hangover temp))
+        {
+            DMG *= _dmgMulti;
+        }
+        base.OnTriggerEnter(other);
     }
 }

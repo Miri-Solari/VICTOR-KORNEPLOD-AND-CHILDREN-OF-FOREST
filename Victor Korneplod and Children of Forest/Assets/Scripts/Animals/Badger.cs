@@ -2,17 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Badger : MonoBehaviour
+public class Badger : Animal
 {
-    // Start is called before the first frame update
-    void Start()
+    protected override void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        other.GetComponent<Lizard>().AddTenPercHP();
+        base.OnTriggerEnter(other);
     }
 }

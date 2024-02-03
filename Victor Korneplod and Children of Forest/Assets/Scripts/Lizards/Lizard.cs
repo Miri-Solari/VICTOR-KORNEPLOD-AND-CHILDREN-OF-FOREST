@@ -3,6 +3,7 @@ using UnityEngine;
 public class Lizard : MonoBehaviour
 {
     [SerializeField] float HP = 10;
+    private float MaxHP = 10;
     
     internal void TakeDamege(float damege)
     {
@@ -11,6 +12,7 @@ public class Lizard : MonoBehaviour
 
     private void Start()
     {
+        MaxHP = HP;
         gameObject.tag = "lizard";
     }
 
@@ -18,8 +20,33 @@ public class Lizard : MonoBehaviour
     {
         if (HP <= 0)
         {
-             Destroy(gameObject);
+             SelfDestroy();
         }
+    }
+
+    public void HalfHp()
+    {
+        HP = MaxHP / 2;
+    }
+
+    public void AddTenPercHP()
+    {
+        HP += MaxHP / 10;
+    }
+
+    public bool IsFullHP()
+    {
+        return HP == MaxHP;
+    }
+
+    public void SelfDestroy()
+    {
+        Destroy(gameObject);
+    }
+
+    public void NaoralPolyak()
+    {
+        HP -= HP * 0.05f;
     }
 
 }

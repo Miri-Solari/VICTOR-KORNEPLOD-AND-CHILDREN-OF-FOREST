@@ -9,16 +9,18 @@ public class Animal : MonoBehaviour
     public float DMG = 1;
     public Effect effect;
     private int _currentLizardcount = 0;
-    private void OnTriggerEnter(Collider other)
+    protected virtual void OnTriggerEnter(Collider other)
     {
         
         if (other.CompareTag("lizard") && _currentLizardcount < MaxLizardCount)
         {
             Lizard lizard = other.gameObject.GetComponent<Lizard>();
             lizard.TakeDamege(DMG);
-            Instantiate(effect, lizard.transform);
+            if (effect != null)
+            {
+                Instantiate(effect, lizard.transform);
+            }
             _currentLizardcount++;
-            Debug.Log("work");
         }
     }
 }

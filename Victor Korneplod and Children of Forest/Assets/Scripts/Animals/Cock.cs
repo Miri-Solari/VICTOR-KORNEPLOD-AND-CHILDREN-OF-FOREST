@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cock : MonoBehaviour
+public class Cock : Animal
 {
-    // Start is called before the first frame update
-    void Start()
+    MonoBehaviour TrapPoints;
+    [SerializeField] private int point = 3;
+    protected override void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.TryGetComponent<Hangover>(out Hangover temp))
+        {
+            //TrapPoints.AddPoints(point);
+        }
+        base.OnTriggerEnter(other);
     }
 }
