@@ -3,8 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags:
   - lizard
+=======
+  tags: []
+>>>>>>> 2578226d832eaf214c72a693784b2fa14519c398
   layers:
   - Default
   - TransparentFX
