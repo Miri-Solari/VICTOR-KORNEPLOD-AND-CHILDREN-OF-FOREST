@@ -65,4 +65,14 @@ public class Lizard : MonoBehaviour
         HP -= HP * 0.05f;
     }
 
+    public float GiveMaxHP()
+    {
+        return MaxHP;
+    }
+
+    public float GiveCurrHP()
+    {
+        return HP;
+    }
+
 }
