@@ -5,8 +5,8 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance { get; private set; }
 
-    [SerializeField] private AudioClip[] sounds; // Массив звуков
-    [SerializeField] private float[] slowdownFactors; // Массив замедления времени
+    [SerializeField] private AudioClip[] sounds;
+    [SerializeField] private float[] slowdownFactors;
     [SerializeField] private AudioSource audioSource;
 
     private bool isSoundPlaying = false;
@@ -36,6 +36,15 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    // Отдельный метод для воспроизведения звука атаки, который не учитывает флаг isSoundPlaying
+    public void PlayAttackSound(int index)
+    {
+        if (index >= 0 && index < sounds.Length)
+        {
+            audioSource.PlayOneShot(sounds[index]); // Воспроизводим звук атаки без замедления времени и проверки на наслаивание
+        }
+    }
+
     private IEnumerator PlaySoundRoutine(AudioClip clip, float slowdownFactor)
     {
         isSoundPlaying = true;
@@ -46,8 +55,6 @@ public class SoundManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(waitTime);
 
         Time.timeScale = 1f;
-
-        
         yield return new WaitForSecondsRealtime(1f);
 
         isSoundPlaying = false;

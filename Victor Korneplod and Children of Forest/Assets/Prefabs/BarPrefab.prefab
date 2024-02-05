@@ -114,8 +114,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxLizardCount: 10
-  DMG: 1
-  effect: {fileID: 0}
+  DMG: 0
+  effect: {fileID: 5399052392241813657, guid: 8f37894579876744ba5b5c06c8410033, type: 3}
   Bar: {fileID: 6245917288819569821}
 --- !u!1 &4832702664528659946
 GameObject:
