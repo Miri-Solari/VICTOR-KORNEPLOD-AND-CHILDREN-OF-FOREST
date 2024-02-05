@@ -16,6 +16,12 @@ public class Wolf : Animal
             DMG *= _dmgMulti;
         }
 
+        if (_currentLizardcount < 1)
+        {
+            int randomNumber = Random.Range(1, 3);
+            if (randomNumber == 1) SoundManager.Instance.PlaySound(0);
+            if (randomNumber == 2) SoundManager.Instance.PlaySound(1);
+        }
         // Запуск анимации атаки
         if (_currentLizardcount < MaxLizardCount && auf != null &&  !auf.GetBool("attack") && !auf2.GetBool("attack") && !auf3.GetBool("attack"))
         {

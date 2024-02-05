@@ -2,22 +2,22 @@ using UnityEngine;
 
 public class CameraOrbit : MonoBehaviour
 {
-    public Transform target; 
-    public float radius = 10.0f; 
-    public float speed = 50.0f; 
+    public Transform target;
+    public float radius = 10.0f;
+    public float speed = 50.0f;
 
-    private float angle = 0f; 
+    private float angle = 0f;
 
     void Update()
     {
         
         if (Input.GetKey(KeyCode.A))
         {
-            angle += speed * Time.deltaTime; 
+            angle += speed * Time.unscaledDeltaTime; 
         }
         if (Input.GetKey(KeyCode.D))
         {
-            angle -= speed * Time.deltaTime; 
+            angle -= speed * Time.unscaledDeltaTime;
         }
 
         
@@ -28,7 +28,7 @@ public class CameraOrbit : MonoBehaviour
         
         transform.position = newPosition;
 
-        
+       
         transform.LookAt(target.position);
 
         
