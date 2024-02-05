@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 5600202819879652404}
   - component: {fileID: 5600202819879652400}
   m_Layer: 0
-  m_Name: threetile
+  m_Name: TileVar9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
