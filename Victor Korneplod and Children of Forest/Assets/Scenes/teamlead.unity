@@ -3330,7 +3330,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405751831}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: d41064a2bc51fd54eb4ed104f3cc1c90, type: 3}
   m_Controller: {fileID: 9100000, guid: 5ea0d29fca60dcf4ba8a4bdef6ed0a90, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -14576,6 +14576,7 @@ GameObject:
   - component: {fileID: 8836444200099782408}
   - component: {fileID: 8836444200099782415}
   - component: {fileID: 8836444200099782414}
+  - component: {fileID: 8836444200099782416}
   m_Layer: 0
   m_Name: MebebLogovo
   m_TagString: Untagged
@@ -14638,6 +14639,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8836444200099782416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8836444200099782412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 030df153f7a7baf41856ced1d6a1051c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxLizardCount: 10
+  DMG: 1
+  effect: {fileID: 0}
+  _dmgMilti: 1
+  _dmgMiltiHang: 1.5
+  _dmgMiltiSlow: 1.5
+  _dmgMiltiDist: 1.5
 --- !u!65 &8836444200332478608
 BoxCollider:
   m_ObjectHideFlags: 0
