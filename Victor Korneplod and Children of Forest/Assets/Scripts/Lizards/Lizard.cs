@@ -1,11 +1,9 @@
 using UnityEngine;
-using UnityEngine.AI;
 
 public class Lizard : MonoBehaviour
 {
     [SerializeField] float HP = 10;
     private float MaxHP = 10;
-    public Animator jasher;
     
     internal void TakeDamege(float damege)
     {
@@ -22,21 +20,7 @@ public class Lizard : MonoBehaviour
     {
         if (HP <= 0)
         {
-            var agent = GetComponent<NavMeshAgent>();
-            if (agent != null)
-            {
-                agent.enabled = false;
-            }
-
-
-            var collider = GetComponent<Collider>();
-            if (collider != null)
-            {
-                Destroy(collider);
-            }
-
-            jasher.SetBool("Death", true);
-            Invoke(nameof(SelfDestroy), 2f);
+             SelfDestroy();
         }
     }
 

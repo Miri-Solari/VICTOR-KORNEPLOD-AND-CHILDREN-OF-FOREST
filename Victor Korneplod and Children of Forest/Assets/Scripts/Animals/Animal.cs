@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Animal : MonoBehaviour 
@@ -7,7 +8,7 @@ public class Animal : MonoBehaviour
     public int MaxLizardCount = 10;
     public float DMG = 1;
     public Effect effect;
-    protected int _currentLizardcount = 0;
+    private int _currentLizardcount = 0;
     protected virtual void OnTriggerEnter(Collider other)
     {
         
