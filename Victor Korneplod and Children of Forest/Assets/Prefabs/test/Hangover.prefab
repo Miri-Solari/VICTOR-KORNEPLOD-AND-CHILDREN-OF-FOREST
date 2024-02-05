@@ -76,6 +76,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 10
-  multi: 0
+  multi: 1
   Target: {fileID: 0}
   _tile: 20

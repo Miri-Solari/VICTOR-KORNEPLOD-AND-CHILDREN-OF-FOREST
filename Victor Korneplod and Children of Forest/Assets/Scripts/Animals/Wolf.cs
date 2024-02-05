@@ -11,7 +11,7 @@ public class Wolf : Animal
 
     protected override void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<Hangover>(out Hangover temp))
+        if (other.transform.GetComponentInChildren<Hangover>())
         {
             DMG *= _dmgMulti;
         }

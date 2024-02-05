@@ -12,15 +12,15 @@ public class Bear : Animal
 
     protected override void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<Hangover>(out Hangover temp))
+        if (other.transform.GetComponentInChildren<Hangover>())
         {
             DMG *= _dmgMiltiHang;
         }
-        if (other.TryGetComponent<Slow>(out Slow temp1))
+        if (other.transform.GetComponentInChildren<Slow>())
         {
             DMG *= _dmgMiltiSlow;
         }
-        if (other.TryGetComponent<Distraction>(out Distraction temp2))
+        if (other.transform.GetComponentInChildren<Distraction>())
         {
             DMG *= _dmgMiltiDist;
         }

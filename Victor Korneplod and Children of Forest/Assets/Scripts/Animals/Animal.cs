@@ -17,6 +17,7 @@ public class Animal : MonoBehaviour
             lizard.TakeDamege(DMG);
             if (effect != null)
             {
+                Debug.Log("norm");
                 Instantiate(effect, lizard.transform);
             }
             _currentLizardcount++;

@@ -4,4 +4,13 @@ using UnityEngine;
 
 public class Hangover : Effect
 {
+    protected override void Awake()
+    {
+        base.Awake();
+    }
+
+    protected override void FixedUpdate()
+    {
+        base.FixedUpdate();
+    }
 }

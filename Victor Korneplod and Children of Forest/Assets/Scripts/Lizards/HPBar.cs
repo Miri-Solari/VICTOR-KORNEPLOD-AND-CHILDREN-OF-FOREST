@@ -21,7 +21,6 @@ public class HPBar : MonoBehaviour
     private void Update()
     {
         _currHP = gameObject.GetComponentInParent<Lizard>().GiveCurrHP();
-        if (_currHP != _maxHP ) Debug.Log(HP.fillAmount);
         HP.fillAmount = _currHP/_maxHP;
         
     }

@@ -21,28 +21,28 @@ public class EffectChecker : MonoBehaviour
 
     void Update()
     {
-        if (_lizard.TryGetComponent<Hangover>(out Hangover temp))
+        if (_lizard.transform.GetComponentInChildren<Hangover>())
         {
             HangEffect.SetActive(true);
         }
         else HangEffect.SetActive(false);
 
 
-        if (_lizard.TryGetComponent<Slow>(out Slow temp1))
+        if (_lizard.transform.GetComponentInChildren<Slow>())
         {
             SlowEffect.SetActive(true);
         }
         else SlowEffect.SetActive(false);
 
 
-        if (_lizard.TryGetComponent<Distraction>(out Distraction temp2))
+        if (_lizard.transform.GetComponentInChildren<Distraction>())
         {
             DistEffect.SetActive(true);
         }
         else DistEffect.SetActive(false);
 
 
-        if (_lizard.TryGetComponent<Flame>(out Flame temp3))
+        if (_lizard.transform.GetComponentInChildren<Flame>())
         {
             FlameEffect.SetActive(true);
         }
