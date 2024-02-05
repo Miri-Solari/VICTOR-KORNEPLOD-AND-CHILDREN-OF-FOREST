@@ -53,7 +53,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a325f6f2b61a23d489fa823ce5e0bcb4, type: 3}
   - {fileID: 8300000, guid: 7e4a469a63446c74cb22f1f25bbf92d8, type: 3}
   - {fileID: 8300000, guid: 45009090b48893440a2eff5448ce2bfb, type: 3}
+  - {fileID: 8300000, guid: bc10998e5534ad849b3ab1ccb7616568, type: 3}
+  - {fileID: 8300000, guid: 62c8645fc91c92b4492fe4aa4f227d6f, type: 3}
   slowdownFactors:
+  - 0.5
+  - 0.5
   - 0.5
   - 0.5
   - 0.5
