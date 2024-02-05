@@ -1464,8 +1464,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Yascher: {fileID: 3549045410358945492}
   target: {fileID: 0}
-  followDistance: 1
-  Speed: 2
+  followDistance: 2
+  Speed: 1
   IsInCharge: 0
 --- !u!136 &3549045410318443608
 CapsuleCollider:
