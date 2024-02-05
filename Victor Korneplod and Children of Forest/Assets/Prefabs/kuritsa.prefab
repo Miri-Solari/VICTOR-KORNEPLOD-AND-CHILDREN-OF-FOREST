@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4266664740307935946}
   - component: {fileID: 4266664740307935949}
   - component: {fileID: 4266664740307935948}
-  - component: {fileID: 6460913058884957632}
+  - component: {fileID: 5018202984313371055}
   m_Layer: 0
   m_Name: kuritsa
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4266664740307935950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.21, y: 0.5, z: -6.75}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 0.0015621923, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -101,7 +101,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1000, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6460913058884957632
+--- !u!114 &5018202984313371055
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,15 +110,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4266664740307935950}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40c383d1afa1cf84290470c0c06381ea, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f3251d53a4ad4a41a91ae628509a770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxLizardCount: 2
-  DMG: 5
-  effect: {fileID: -2502565321806588103, guid: 6af03bc86a5eb9145a158ca344e786da, type: 3}
-  auf: {fileID: 0}
-  auf2: {fileID: 0}
-  _dmgMulti: 1.2
+  MaxLizardCount: 10
+  DMG: 1
+  effect: {fileID: 0}
+  animator: {fileID: 4247371541394347383}
 --- !u!1 &4266664740390070280
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,8 +378,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: kuritsa
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: b73902dae24df6c40b905f4a552df71e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7031aecbf9e4fd849880100511820b51, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b73902dae24df6c40b905f4a552df71e, type: 3}
+--- !u!95 &4247371541394347383 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: b73902dae24df6c40b905f4a552df71e, type: 3}
+  m_PrefabInstance: {fileID: 7753831041452304614}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7787178117437853453 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b73902dae24df6c40b905f4a552df71e, type: 3}
