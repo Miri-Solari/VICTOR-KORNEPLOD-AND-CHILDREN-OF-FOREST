@@ -1463,7 +1463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Yascher: {fileID: 3549045410358945492}
-  target: {fileID: 0}
+  target: {fileID: 4973754362270952516, guid: 28953f8e9cb77324cbcf35a2ec1189ef, type: 3}
   followDistance: 1
   Speed: 2
   IsInCharge: 0
