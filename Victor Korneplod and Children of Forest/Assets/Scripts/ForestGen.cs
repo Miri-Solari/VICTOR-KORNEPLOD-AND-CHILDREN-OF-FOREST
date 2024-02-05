@@ -86,7 +86,7 @@ public class ForestGen : MonoBehaviour
                 exeptions.Add(new Vector2(int.Parse(SplitLog[2]) , int.Parse(SplitLog[3]) + 1));
             }
             exeptions.Add(new Vector2(int.Parse(SplitLog[2]), int.Parse(SplitLog[3])));
-            b.transform.position = Vector3.right * int.Parse(SplitLog[2]) * 2 + Vector3.forward * int.Parse(SplitLog[3]) * 2 - new Vector3(Dimesions.x - 1, 0, Dimesions.y - 1);
+            b.transform.position = Vector3.right * int.Parse(SplitLog[2]) * 2 + Vector3.forward * int.Parse(SplitLog[3]) * 2 - new Vector3(Dimesions.x - 1, 0, Dimesions.y - 1) + Vector3.up * 0.475f;
         }
     }
 
@@ -101,12 +101,7 @@ public class ForestGen : MonoBehaviour
         }
         
         GameObject b = Instantiate(TreePrefabs[Random.Range(0, TreePrefabs.Length)]);
-        b.transform.position = Vector3.right * x * 2 + Vector3.forward * y * 2 - new Vector3(Dimesions.x - 1, 0, Dimesions.y - 1);
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        b.transform.position = Vector3.right * x * 2 + Vector3.forward * y * 2 - new Vector3(Dimesions.x - 1, 0, Dimesions.y - 1);
     }
 }
