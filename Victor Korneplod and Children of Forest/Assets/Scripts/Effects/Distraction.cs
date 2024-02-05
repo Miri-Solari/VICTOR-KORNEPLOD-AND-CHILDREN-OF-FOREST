@@ -4,8 +4,5 @@ using UnityEngine;
 
 public class Distraction : Effect
 {
-    private void Start()
-    {
-        gameObject.tag = "distraction";
-    }
+    
 }
