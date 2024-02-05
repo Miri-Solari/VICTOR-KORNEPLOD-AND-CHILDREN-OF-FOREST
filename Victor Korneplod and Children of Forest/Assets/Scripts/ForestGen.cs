@@ -5,13 +5,28 @@ using System.Linq;
 public class ForestGen : MonoBehaviour
 {
 
+    public TextAsset LevelLog;
     public Vector2 Dimesions;
     public GameObject[] TreePrefabs;
     public int[] TreePriority;
-    public Vector2[] exeptions;
+    public GameObject[] AnimalPrefab;
+    public List<Vector2> exeptions;
+
+    private Dictionary<string, int> AnimalID = new Dictionary<string, int>
+    {
+        {"bear", 0},
+        {"wolf", 1},
+        {"chicken", 2},
+        {"kiken", 3},
+        {"syka", 4},
+        {"explosion", 5}
+
+
+    };
 
     void Start()
     {
+        GenerateAnimals();
         for(int x = 0; x < Dimesions.x; x++)
         {
             for(int y = 0; y < Dimesions.y; y++)
@@ -20,6 +35,55 @@ public class ForestGen : MonoBehaviour
             }
         }
     }
+    void GenerateAnimals()
+    {
+        string[] log = LevelLog.text.Split('\n');
+        for(int animal = 1; animal < log.Length; animal++)
+        {
+            string[] SplitLog = { "", "", "", "" };
+            foreach (char ch in log[animal])
+            {
+                int cc = 0;
+                if (ch == ' ')
+                {
+                    cc = 1;
+                }
+                if (ch == ':')
+                {
+                    cc = 2;
+                }
+                if (ch == ',')
+                {
+                    cc = 3;
+                }
+                SplitLog[cc] = SplitLog[cc] + ch;
+            }
+
+            var b = Instantiate(AnimalPrefab[AnimalID[SplitLog[0]]]);
+            if (SplitLog[1] == "N")
+            {
+                b.transform.eulerAngles = Vector3.up * -90;
+                exeptions.Add(new Vector2(int.Parse(SplitLog[2]), int.Parse(SplitLog[3]) - 1));
+            }
+            if (SplitLog[1] == "E")
+            {
+                b.transform.eulerAngles = Vector3.zero;
+                exeptions.Add(new Vector2(int.Parse(SplitLog[2]) - 1, int.Parse(SplitLog[3])));
+            }
+            if (SplitLog[1] == "S")
+            {
+                b.transform.eulerAngles = Vector3.up * 90;
+                exeptions.Add(new Vector2(int.Parse(SplitLog[2]), int.Parse(SplitLog[3]) + 1));
+            }
+            if (SplitLog[1] == "W")
+            {
+                b.transform.eulerAngles = Vector3.up * 180;
+                exeptions.Add(new Vector2(int.Parse(SplitLog[2]) + 1, int.Parse(SplitLog[3])));
+            }
+            b.transform.position = Vector3.right * int.Parse(SplitLog[2]) * 2 + Vector3.forward * int.Parse(SplitLog[3]) * 2 - new Vector3(Dimesions.x - 1, 0, Dimesions.y - 1);
+        }
+    }
+
     void GenerateTile(int x, int y)
     {
         foreach (Vector2 exeption in exeptions)
