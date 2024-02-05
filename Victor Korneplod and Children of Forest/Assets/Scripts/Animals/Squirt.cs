@@ -37,7 +37,7 @@ public class Squirt : Animal
         Debug.Log(_currentLizardcount);
         auf.SetBool("attack", true);
         auf2.SetBool("attack", true);
-        yield return new WaitForSeconds(0.9f);
+        yield return new WaitForSeconds(1f);
         auf.SetBool("attack", false);
         auf2.SetBool("attack", false);
     }
