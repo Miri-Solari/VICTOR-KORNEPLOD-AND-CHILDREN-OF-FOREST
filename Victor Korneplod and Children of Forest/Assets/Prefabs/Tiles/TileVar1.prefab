@@ -649,6 +649,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: b9dbc5321386c9f4ba82a9a170c5a0aa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8508f5aa4fb603749b41a2170f5073e4, type: 2}
+    - target: {fileID: -7635826562936255635, guid: b9dbc5321386c9f4ba82a9a170c5a0aa, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 83af51e0fe8bf9c4ea5c78faaf6567a9, type: 2}
     - target: {fileID: 919132149155446097, guid: b9dbc5321386c9f4ba82a9a170c5a0aa, type: 3}
       propertyPath: m_Name
       value: elka
@@ -887,6 +895,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: b9dbc5321386c9f4ba82a9a170c5a0aa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e94b92daaf87ef246b9a2427f9c0947e, type: 2}
+    - target: {fileID: -7635826562936255635, guid: b9dbc5321386c9f4ba82a9a170c5a0aa, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 83af51e0fe8bf9c4ea5c78faaf6567a9, type: 2}
     - target: {fileID: 919132149155446097, guid: b9dbc5321386c9f4ba82a9a170c5a0aa, type: 3}
       propertyPath: m_Name
       value: elka (2)
