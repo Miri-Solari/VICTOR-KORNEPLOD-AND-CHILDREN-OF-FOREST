@@ -6,6 +6,7 @@ using UnityEngine;
 public class Mole : BaseTrap
 {
     [SerializeField] Slow _effect;
+    AudioSource moleSound;
     protected override void OnTriggerEnter(Collider other)
     {
         base.OnTriggerEnter(other);
