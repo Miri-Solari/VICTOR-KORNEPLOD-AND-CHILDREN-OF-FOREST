@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 4832702664551504059}
   - component: {fileID: 4832702664551504056}
   - component: {fileID: 4832702664551504057}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wl place
   m_TagString: Untagged
   m_Icon: {fileID: 0}
