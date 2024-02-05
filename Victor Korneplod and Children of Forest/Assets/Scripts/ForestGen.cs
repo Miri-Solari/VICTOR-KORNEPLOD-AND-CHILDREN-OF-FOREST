@@ -40,47 +40,53 @@ public class ForestGen : MonoBehaviour
         string[] log = LevelLog.text.Split('\n');
         for(int animal = 1; animal < log.Length; animal++)
         {
-            string[] SplitLog = { "", "", "", "" };
+            string[] SplitLog = { "", "", "", ""};
+            int cc = 0;
             foreach (char ch in log[animal])
             {
-                int cc = 0;
                 if (ch == ' ')
                 {
                     cc = 1;
                 }
-                if (ch == ':')
+                else if (ch == ':')
                 {
                     cc = 2;
                 }
-                if (ch == ',')
+                else if (ch == ',')
                 {
                     cc = 3;
                 }
-                SplitLog[cc] = SplitLog[cc] + ch;
+                else
+                {
+                    SplitLog[cc] = SplitLog[cc] + ch;
+                }
             }
+
+            Debug.Log(SplitLog[0] + "|" + SplitLog[2] + "|" + SplitLog[3] + "|");
 
             var b = Instantiate(AnimalPrefab[AnimalID[SplitLog[0]]]);
             if (SplitLog[1] == "N")
             {
                 b.transform.eulerAngles = Vector3.up * -90;
-                exeptions.Add(new Vector2(int.Parse(SplitLog[2]), int.Parse(SplitLog[3]) - 1));
+                exeptions.Add(new Vector2(int.Parse(SplitLog[2]) + 1, int.Parse(SplitLog[3])));
             }
             if (SplitLog[1] == "E")
             {
                 b.transform.eulerAngles = Vector3.zero;
-                exeptions.Add(new Vector2(int.Parse(SplitLog[2]) - 1, int.Parse(SplitLog[3])));
+                exeptions.Add(new Vector2(int.Parse(SplitLog[2]), int.Parse(SplitLog[3]) - 1));
             }
             if (SplitLog[1] == "S")
             {
                 b.transform.eulerAngles = Vector3.up * 90;
-                exeptions.Add(new Vector2(int.Parse(SplitLog[2]), int.Parse(SplitLog[3]) + 1));
+                exeptions.Add(new Vector2(int.Parse(SplitLog[2]) - 1, int.Parse(SplitLog[3])));
             }
             if (SplitLog[1] == "W")
             {
                 b.transform.eulerAngles = Vector3.up * 180;
-                exeptions.Add(new Vector2(int.Parse(SplitLog[2]) + 1, int.Parse(SplitLog[3])));
+                exeptions.Add(new Vector2(int.Parse(SplitLog[2]) , int.Parse(SplitLog[3]) + 1));
             }
-            b.transform.position = Vector3.right * int.Parse(SplitLog[2]) * 2 + Vector3.forward * int.Parse(SplitLog[3]) * 2 - new Vector3(Dimesions.x - 1, 0, Dimesions.y - 1);
+            exeptions.Add(new Vector2(int.Parse(SplitLog[2]), int.Parse(SplitLog[3])));
+            b.transform.position = Vector3.right * int.Parse(SplitLog[2]) * 2 + Vector3.forward * int.Parse(SplitLog[3]) * 2 - new Vector3(Dimesions.x - 1, 0, Dimesions.y - 1) + Vector3.up * 0.475f;
         }
     }
 
@@ -95,12 +101,7 @@ public class ForestGen : MonoBehaviour
         }
         
         GameObject b = Instantiate(TreePrefabs[Random.Range(0, TreePrefabs.Length)]);
-        b.transform.position = Vector3.right * x * 2 + Vector3.forward * y * 2 - new Vector3(Dimesions.x - 1, 0, Dimesions.y - 1);
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        b.transform.position = Vector3.right * x * 2 + Vector3.forward * y * 2 - new Vector3(Dimesions.x - 1, 0, Dimesions.y - 1);
     }
 }
