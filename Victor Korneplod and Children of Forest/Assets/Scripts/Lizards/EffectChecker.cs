@@ -11,6 +11,14 @@ public class EffectChecker : MonoBehaviour
     [SerializeField] GameObject HangEffect;
     [SerializeField] GameObject DistEffect;
 
+    private void Start()
+    {
+        HangEffect.SetActive(false);
+        SlowEffect.SetActive(false);
+        DistEffect.SetActive(false);
+        FlameEffect.SetActive(false);
+    }
+
     void Update()
     {
         if (_lizard.TryGetComponent<Hangover>(out Hangover temp))
