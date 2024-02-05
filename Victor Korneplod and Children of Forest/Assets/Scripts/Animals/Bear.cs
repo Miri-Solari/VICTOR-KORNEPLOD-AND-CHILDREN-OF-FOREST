@@ -8,6 +8,7 @@ public class Bear : Animal
     [SerializeField] float _dmgMiltiHang;
     [SerializeField] float _dmgMiltiSlow;
     [SerializeField] float _dmgMiltiDist;
+    public Animator RuR;
 
     protected override void OnTriggerEnter(Collider other)
     {
@@ -24,6 +25,21 @@ public class Bear : Animal
             DMG *= _dmgMiltiDist;
         }
 
+        if (_currentLizardcount < MaxLizardCount && RuR != null && !RuR.GetBool("attack"))
+        {
+            StartCoroutine(TriggerAttackAnimation());
+        }
+
         base.OnTriggerEnter(other);
     }
+
+    private IEnumerator TriggerAttackAnimation()
+    {
+        Debug.Log(_currentLizardcount);
+        RuR.SetBool("attack", true);
+        yield return new WaitForSeconds(0.9f);
+        RuR.SetBool("attack", false);
+
+    }
+
 }
