@@ -8,10 +8,6 @@ public class BaseTrap : MonoBehaviour
     protected Lizard _lizard;
     public int count;
 
-    private void Awake()
-    {
-        //TrapPoints.UsePoints(count);
-    }
     protected virtual void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("lizard"))
