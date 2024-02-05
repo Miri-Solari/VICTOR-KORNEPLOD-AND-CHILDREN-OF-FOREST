@@ -48,6 +48,7 @@ MonoBehaviour:
   Dimesions: {x: 0, y: 0}
   TreePrefabs: []
   TreePriority: 
+  exeptions: []
 --- !u!1 &8854686403738959445
 GameObject:
   m_ObjectHideFlags: 0
@@ -59,6 +60,7 @@ GameObject:
   - component: {fileID: 4797835801391345855}
   - component: {fileID: 4280679887536670241}
   - component: {fileID: 5651465880418392830}
+  - component: {fileID: 5117907422856436828}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -109,8 +111,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6478536213147159724, guid: 494e2a677f274f44c87603f9dd3be191, type: 3}
-  - {fileID: -876546973899608171, guid: 494e2a677f274f44c87603f9dd3be191, type: 3}
+  - {fileID: 2100000, guid: c305c152ddc888746a188892aa6bf83f, type: 2}
+  - {fileID: 2100000, guid: 9bbc28ee818f2d44abef12f7ee42dceb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -132,3 +134,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5117907422856436828
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8854686403738959445}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5495902117074765545, guid: 494e2a677f274f44c87603f9dd3be191, type: 3}
