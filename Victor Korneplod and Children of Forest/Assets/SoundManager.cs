@@ -36,12 +36,12 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    // ќтдельный метод дл€ воспроизведени€ звука атаки, который не учитывает флаг isSoundPlaying
+   
     public void PlayAttackSound(int index)
     {
         if (index >= 0 && index < sounds.Length)
         {
-            audioSource.PlayOneShot(sounds[index]); // ¬оспроизводим звук атаки без замедлени€ времени и проверки на наслаивание
+            audioSource.PlayOneShot(sounds[index]); 
         }
     }
 
