@@ -10,7 +10,7 @@ public class Slow : Effect
 
     private void Start()
     {
-        gameObject.tag = "slow";
+        
         if (Target.CompareTag("lizard"))
         {
             LizardMove lizard = Target.GetComponent<LizardMove>();

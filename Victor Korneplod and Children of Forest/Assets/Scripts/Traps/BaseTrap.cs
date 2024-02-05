@@ -16,7 +16,7 @@ public class BaseTrap : MonoBehaviour
     {
         if (other.CompareTag("lizard"))
         {
-            _lizard = other.gameObject.GetComponent<Lizard>();
+            _lizard = other.GetComponent<Lizard>();
 
         }
     }
