@@ -8,7 +8,7 @@ public class Cock : Animal
     [SerializeField] private int point = 3;
     protected override void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<Hangover>(out Hangover temp))
+        if (other.transform.GetComponentInChildren<Hangover>())
         {
             //TrapPoints.AddPoints(point);
         }

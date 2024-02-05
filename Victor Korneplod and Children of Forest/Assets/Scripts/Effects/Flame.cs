@@ -9,8 +9,8 @@ public class Flame : Effect
 
     protected override void Awake()
     {
-        InvokeRepeating(nameof(Fire), 0.2f, 1.0f);
         base.Awake();
+        InvokeRepeating(nameof(Fire), 0.2f, 1.0f);
     }
 
     private void Fire()

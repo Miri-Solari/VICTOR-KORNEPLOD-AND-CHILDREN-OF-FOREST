@@ -12,17 +12,25 @@ public class Bear : Animal
 
     protected override void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<Hangover>(out Hangover temp))
+        if (other.transform.GetComponentInChildren<Hangover>())
         {
             DMG *= _dmgMiltiHang;
         }
-        if (other.TryGetComponent<Slow>(out Slow temp1))
+        if (other.transform.GetComponentInChildren<Slow>())
         {
             DMG *= _dmgMiltiSlow;
         }
-        if (other.TryGetComponent<Distraction>(out Distraction temp2))
+        if (other.transform.GetComponentInChildren<Distraction>())
         {
             DMG *= _dmgMiltiDist;
+        }
+
+
+        if (_currentLizardcount < 1)
+        {
+            int randomNumber = Random.Range(1, 3);
+            if (randomNumber == 1) SoundManager.Instance.PlaySound(3);
+            if (randomNumber == 2) SoundManager.Instance.PlaySound(4);
         }
 
         if (_currentLizardcount < MaxLizardCount && RuR != null && !RuR.GetBool("attack"))

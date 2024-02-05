@@ -7,7 +7,7 @@ public class Squirt : Animal
     [SerializeField] private float _dmgMulti;
     protected override void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<Slow>(out Slow temp))
+        if (other.transform.GetComponentInChildren<Slow>())
         {
             DMG *= _dmgMulti;
         }

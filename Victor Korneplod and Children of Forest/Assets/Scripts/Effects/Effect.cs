@@ -16,7 +16,7 @@ public class Effect : MonoBehaviour
         time = _tile * secForTile;
     }
 
-    private void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
         time -= Time.deltaTime;
         if (time <= 0)
