@@ -9,11 +9,13 @@ public class Spikes : BaseTrap
     private int _lizardCount;
     protected override void OnTriggerEnter(Collider other)
     {
+        Debug.Log("ящер пидор");
         base.OnTriggerEnter(other);
         if (_lizard != null && _lizardCount < _maxLizardCount)
         {
             _lizard.TakeDamege(_dmg);
             _lizardCount++;
+            Debug.Log("ящер прибавлен");
         }
     }
 }
