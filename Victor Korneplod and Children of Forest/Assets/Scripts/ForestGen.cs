@@ -30,7 +30,7 @@ public class ForestGen : MonoBehaviour
             }
         }
         
-        GameObject b = Instantiate(TreePrefabs[Random.Range(0, TreePrefabs.Length-1)]);
+        GameObject b = Instantiate(TreePrefabs[Random.Range(0, TreePrefabs.Length)]);
         b.transform.position = Vector3.right * x * 2 + Vector3.forward * y * 2 - new Vector3(Dimesions.x - 1, 0, Dimesions.y - 1);
     }
 
