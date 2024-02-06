@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6487453291586339521}
   - component: {fileID: 6487453291586339520}
   - component: {fileID: 6487453291586339523}
+  - component: {fileID: 769624189}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -55,9 +56,22 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 45009090b48893440a2eff5448ce2bfb, type: 3}
   - {fileID: 8300000, guid: bc10998e5534ad849b3ab1ccb7616568, type: 3}
   - {fileID: 8300000, guid: 62c8645fc91c92b4492fe4aa4f227d6f, type: 3}
+  - {fileID: 8300000, guid: 742396d8d95eced4ebd57b8f6b661ae8, type: 3}
+  - {fileID: 8300000, guid: 742396d8d95eced4ebd57b8f6b661ae8, type: 3}
+  - {fileID: 8300000, guid: 742396d8d95eced4ebd57b8f6b661ae8, type: 3}
+  - {fileID: 8300000, guid: 742396d8d95eced4ebd57b8f6b661ae8, type: 3}
+  - {fileID: 8300000, guid: 742396d8d95eced4ebd57b8f6b661ae8, type: 3}
+  - {fileID: 8300000, guid: 742396d8d95eced4ebd57b8f6b661ae8, type: 3}
+  - {fileID: 8300000, guid: 742396d8d95eced4ebd57b8f6b661ae8, type: 3}
+  - {fileID: 8300000, guid: 742396d8d95eced4ebd57b8f6b661ae8, type: 3}
+  - {fileID: 8300000, guid: a92fcd8052354f346a45c34b0dc58265, type: 3}
+  - {fileID: 8300000, guid: 151835c16bef98146895e986dc7df904, type: 3}
+  - {fileID: 8300000, guid: a596f11a8b7119241b26aa72b71fd5e2, type: 3}
+  - {fileID: 8300000, guid: 555e0e7eab3db144d9ad17aaab56d3fa, type: 3}
   slowdownFactors:
   - 0.5
   - 0.5
+  - 0.05
   - 0.5
   - 0.5
   - 0.5
@@ -65,6 +79,15 @@ MonoBehaviour:
   - 0.5
   - 0.5
   - 0.5
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
   audioSource: {fileID: 6487453291586339523}
 --- !u!82 &6487453291586339523
 AudioSource:
@@ -162,3 +185,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &769624189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6487453291586339522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96ecab05c2415c41ac4cc718e81de8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

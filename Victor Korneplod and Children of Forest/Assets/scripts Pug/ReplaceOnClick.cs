@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
 
 public class ReplaceOnClick : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class ReplaceOnClick : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !isTemporarilyBlocked && !isPermanentlyBlocked)
+        if (Input.GetMouseButtonDown(0) && !isTemporarilyBlocked && !isPermanentlyBlocked && !PAUSEPOCHINKA.ISPAUSED && !EventSystem.current.IsPointerOverGameObject())
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;

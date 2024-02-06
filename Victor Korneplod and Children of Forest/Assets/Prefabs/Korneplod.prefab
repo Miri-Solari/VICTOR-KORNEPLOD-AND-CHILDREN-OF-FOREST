@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4973754362270952516}
   - component: {fileID: 1293300673820766423}
   - component: {fileID: 2415664105082029276}
+  - component: {fileID: 124734084}
+  - component: {fileID: 1284577569353342689}
   m_Layer: 0
   m_Name: Korneplod
   m_TagString: Untagged
@@ -60,11 +62,37 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3449453133074578124}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.4, z: 1}
-  m_Center: {x: 0, y: 1.21, z: 0}
+  m_Size: {x: 5.5865755, y: 1.5659873, z: 1.7997645}
+  m_Center: {x: 0.020932674, y: 1.2929937, z: -0.023676097}
+--- !u!65 &124734084
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3449453133074578124}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4003026, y: 1.7581375, z: 5.48677}
+  m_Center: {x: 0.003956914, y: 1.1852511, z: -0.27333617}
+--- !u!114 &1284577569353342689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3449453133074578124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8748edce5298bb49be6646e763c9ab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Manager: {fileID: 0}
 --- !u!1001 &1228345433010750727
 PrefabInstance:
   m_ObjectHideFlags: 0

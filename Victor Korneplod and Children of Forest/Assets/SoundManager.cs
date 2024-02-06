@@ -30,6 +30,7 @@ public class SoundManager : MonoBehaviour
         {
             StartCoroutine(PlaySoundRoutine(sounds[index], slowdownFactors[index]));
         }
+        
         else
         {
             Debug.LogWarning("Ќеверный индекс или звук уже воспроизводитс€");
@@ -50,10 +51,12 @@ public class SoundManager : MonoBehaviour
         isSoundPlaying = true;
         Time.timeScale = slowdownFactor;
         audioSource.PlayOneShot(clip);
-
         float waitTime = clip.length;
         yield return new WaitForSecondsRealtime(waitTime);
-
+        while (PAUSEPOCHINKA.ISPAUSED)
+        {
+            yield return new WaitForSecondsRealtime(0.1f);
+        }
         Time.timeScale = 1f;
         yield return new WaitForSecondsRealtime(1f);
 
