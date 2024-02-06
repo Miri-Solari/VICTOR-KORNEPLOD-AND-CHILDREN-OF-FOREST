@@ -5,6 +5,7 @@ using System;
 
 public class MoveToTarget : MonoBehaviour
 {
+    public static bool active;
     public static event Action<float> TargetReachedEvent;
     public Transform target;
     public float speed = 3.5f;
@@ -24,6 +25,7 @@ public class MoveToTarget : MonoBehaviour
     public void StartMovingTowardsTarget()
     {
         Time.timeScale = timeScaleFactor; 
+        active = true;
         MoveTowardsTarget();
     }
 
@@ -43,16 +45,18 @@ public class MoveToTarget : MonoBehaviour
             if (distanceToTarget < 1.0f)
             {
                 float totalTime = (Time.time - startTime) * timeScaleFactor; 
-                Time.timeScale = 1.0f; 
+                Time.timeScale = 1.0f;
+                active = false;
                 TargetReachedEvent?.Invoke(totalTime);
                 UIbuttons.SetActive(false);
                 Destroy(gameObject);
                 yield break;
             }
 
-            if (Time.time - startTime > 1000f) 
+            if (Time.time - startTime > 450f) 
             {
-                Time.timeScale = 1.0f; 
+                Time.timeScale = 1.0f;
+                active = false;
                 agent.destination = startPosition;
                 yield break;
             }
