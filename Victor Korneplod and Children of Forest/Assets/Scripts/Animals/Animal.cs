@@ -8,6 +8,13 @@ public class Animal : MonoBehaviour
     public float DMG = 1;
     public Effect effect;
     protected int _currentLizardcount = 0;
+    private float _baseDmg;
+
+    private void Awake()
+    {
+        _baseDmg = DMG;
+    }
+
     protected virtual void OnTriggerEnter(Collider other)
     {
         
@@ -15,6 +22,7 @@ public class Animal : MonoBehaviour
         {
             Lizard lizard = other.gameObject.GetComponent<Lizard>();
             lizard.TakeDamege(DMG);
+            DMG = _baseDmg;
             if (effect != null)
             {
                 Debug.Log("norm");
