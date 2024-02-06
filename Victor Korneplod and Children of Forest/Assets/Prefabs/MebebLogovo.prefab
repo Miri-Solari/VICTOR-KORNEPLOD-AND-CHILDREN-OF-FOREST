@@ -307,8 +307,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030df153f7a7baf41856ced1d6a1051c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxLizardCount: 10
-  DMG: 4
+  MaxLizardCount: 3
+  DMG: 10
   effect: {fileID: 0}
   _dmgMilti: 1
   _dmgMiltiHang: 1.5
