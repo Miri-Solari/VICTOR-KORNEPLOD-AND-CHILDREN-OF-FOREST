@@ -1792,6 +1792,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PauseMenu: {fileID: 9090449133599723220}
   CurrentMenu: {fileID: 0}
+  Sound: {fileID: 0}
 --- !u!1 &9090449133973042432
 GameObject:
   m_ObjectHideFlags: 0

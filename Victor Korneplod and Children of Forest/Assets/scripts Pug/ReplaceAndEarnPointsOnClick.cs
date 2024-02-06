@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
 
 public class ReplaceAndEarnPointsOnClick : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class ReplaceAndEarnPointsOnClick : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !TrapManager.Instance.isPlacingTrap && !TrapManager.Instance.isRemovingTrap && !isTargetReached && !isTemporarilyBlocked)
+        if (Input.GetMouseButtonDown(0) && !TrapManager.Instance.isPlacingTrap && !TrapManager.Instance.isRemovingTrap && !isTargetReached && !isTemporarilyBlocked && !PAUSEPOCHINKA.ISPAUSED && !EventSystem.current.IsPointerOverGameObject())
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
