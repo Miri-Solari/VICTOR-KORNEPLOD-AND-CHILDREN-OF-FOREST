@@ -4614,6 +4614,10 @@ PrefabInstance:
       propertyPath: IsInCharge
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6312347455095909938, guid: 7762fcbcdf2ad434aa51e4b60adf878f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7783407194549494685, guid: 7762fcbcdf2ad434aa51e4b60adf878f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -10017,7 +10021,7 @@ PrefabInstance:
     - target: {fileID: 5718015363448125836, guid: 9b3a6aad92170f74e988e9a985aa251e, type: 3}
       propertyPath: LevelLog
       value: 
-      objectReference: {fileID: 4900000, guid: fc699307fc1904a4887ff143d0d8cc39, type: 3}
+      objectReference: {fileID: 4900000, guid: 42566f790a1fb71449c6e0ba8cf3316a, type: 3}
     - target: {fileID: 5718015363448125836, guid: 9b3a6aad92170f74e988e9a985aa251e, type: 3}
       propertyPath: Dimesions.x
       value: 17
