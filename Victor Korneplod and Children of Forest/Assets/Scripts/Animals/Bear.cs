@@ -8,6 +8,7 @@ public class Bear : Animal
     [SerializeField] float _dmgMiltiHang;
     [SerializeField] float _dmgMiltiSlow;
     [SerializeField] float _dmgMiltiDist;
+
     public Animator RuR;
 
     protected override void OnTriggerEnter(Collider other)
@@ -47,7 +48,6 @@ public class Bear : Animal
         RuR.SetBool("attack", true);
         yield return new WaitForSeconds(0.9f);
         RuR.SetBool("attack", false);
-
     }
 
 }
