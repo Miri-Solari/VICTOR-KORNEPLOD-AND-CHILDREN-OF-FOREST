@@ -6,8 +6,13 @@ public class ENDGAME : MonoBehaviour
 {
     public static bool EndGame = false;
     public GameObject Manager;
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        Manager.GetComponent<VictoryManager>().Lose();
+        if (!EndGame)
+        {
+            Manager.GetComponent<VictoryManager>().Lose();
+            EndGame = true;
+        }
+
     }
 }
