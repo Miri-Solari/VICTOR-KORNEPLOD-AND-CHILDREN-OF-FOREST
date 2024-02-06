@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Relise/LVL2.unity
     guid: 1f8994a3c1bcb154185a6b0e4bbfe14a
   - enabled: 1
-    path: Assets/Scenes/Relise/LVL4.unity
+    path: Assets/Scenes/Relise/LVL3.unity
     guid: 988545b80406f65499def1054979fe9c
   - enabled: 1
     path: Assets/Scenes/Relise/LVL5.unity
