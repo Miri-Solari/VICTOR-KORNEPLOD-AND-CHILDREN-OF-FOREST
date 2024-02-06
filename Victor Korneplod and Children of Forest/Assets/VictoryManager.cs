@@ -59,9 +59,13 @@ public class VictoryManager : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
         int sceneNum = Convert.ToInt32(Regex.Match(sceneName, @"\d+").Value);
-        if (LastLVL.Lastlvl)
+        if (LastLVL.Lastlvl || sceneName == "Learn2")
         {
             SceneManager.LoadScene("MainMenu");
+        }
+        else if (sceneName == "Learn1")
+        {
+            SceneManager.LoadScene("Learn2");
         }
         else SceneManager.LoadScene($"LVL{sceneNum + 1}");
     }
