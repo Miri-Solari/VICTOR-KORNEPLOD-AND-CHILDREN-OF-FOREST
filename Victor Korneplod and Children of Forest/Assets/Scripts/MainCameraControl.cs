@@ -49,23 +49,25 @@ public class MainCameraControl : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse1))
-        {
+        if (!MoveToTarget.active) {
+            if (Input.GetKey(KeyCode.Mouse1))
+            {
 
-            float rotX = mainCamera.transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivity;
-            rotY += Input.GetAxis("Mouse Y") * sensitivity;
-            rotY = Mathf.Clamp(rotY, -90, 90);
-            //Debug.Log(mainCamera.transform.localEulerAngles.x);
+                float rotX = mainCamera.transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivity;
+                rotY += Input.GetAxis("Mouse Y") * sensitivity;
+                rotY = Mathf.Clamp(rotY, -90, 90);
+                //Debug.Log(mainCamera.transform.localEulerAngles.x);
 
-            if (-rotY >= 145) rotY = -144;
-            else if (-rotY <= 35) rotY = -36;
-            //if (-rotY < 145 && -rotY > 35)
-            mainCamera.transform.localEulerAngles = new Vector3(-rotY, rotX, 0);
-        }
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
-        direction = new Vector3(h, 0, v);
-        direction = mainCamera.transform.TransformDirection(direction);
+                if (-rotY >= 145) rotY = -144;
+                else if (-rotY <= 35) rotY = -36;
+                //if (-rotY < 145 && -rotY > 35)
+                mainCamera.transform.localEulerAngles = new Vector3(-rotY, rotX, 0);
+            }
+            float h = Input.GetAxis("Horizontal");
+            float v = Input.GetAxis("Vertical");
+            direction = new Vector3(h, 0, v);
+            direction = mainCamera.transform.TransformDirection(direction);
+        } 
     }
 
     void FixedUpdate()
