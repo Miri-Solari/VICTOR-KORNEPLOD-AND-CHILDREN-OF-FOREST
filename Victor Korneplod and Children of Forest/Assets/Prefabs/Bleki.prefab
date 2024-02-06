@@ -119,7 +119,7 @@ MonoBehaviour:
   effect: {fileID: -2502565321806588103, guid: 6af03bc86a5eb9145a158ca344e786da, type: 3}
   auf: {fileID: 4626893678727139257}
   auf2: {fileID: 676027880017425870}
-  _dmgMulti: 1.2
+  _dmgMulti: 1.5
 --- !u!1 &8095533428049897290
 GameObject:
   m_ObjectHideFlags: 0

@@ -311,9 +311,9 @@ MonoBehaviour:
   DMG: 10
   effect: {fileID: 0}
   _dmgMilti: 1
-  _dmgMiltiHang: 1.5
-  _dmgMiltiSlow: 1.5
-  _dmgMiltiDist: 1.5
+  _dmgMiltiHang: 2
+  _dmgMiltiSlow: 2
+  _dmgMiltiDist: 2
   RuR: {fileID: 7685918188753653874}
 --- !u!1 &1537364287785289525
 GameObject:

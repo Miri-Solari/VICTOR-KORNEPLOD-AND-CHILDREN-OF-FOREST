@@ -1493,7 +1493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd2b74c1d29b7742b3cf8e471714189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 10
+  HP: 100
   jasher: {fileID: 3549045410358945492}
 --- !u!54 &-6309059151607995589
 Rigidbody:

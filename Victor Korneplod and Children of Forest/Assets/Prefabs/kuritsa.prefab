@@ -10079,7 +10079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3251d53a4ad4a41a91ae628509a770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxLizardCount: 10
+  MaxLizardCount: 15
   DMG: 0
   effect: {fileID: 0}
   animator: {fileID: 4077389686386786373}
