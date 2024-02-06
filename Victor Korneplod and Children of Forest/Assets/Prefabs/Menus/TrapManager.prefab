@@ -47,14 +47,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trapCosts:
   - trapPrefab: {fileID: 4679812535004431334, guid: 1e0f4acfa8b976e48b03b6da172ac786, type: 3}
-    placementCost: 100
-    removalReward: 100
+    placementCost: 350
+    removalReward: 350
   - trapPrefab: {fileID: 7451005653635160850, guid: 7b5977d2b72ceef418a02190a42ea736, type: 3}
-    placementCost: 200
-    removalReward: 200
-  - trapPrefab: {fileID: 1792260986319810046, guid: 87e6503e63fca324f960b45ac24bf4a3, type: 3}
     placementCost: 150
     removalReward: 150
+  - trapPrefab: {fileID: 1792260986319810046, guid: 87e6503e63fca324f960b45ac24bf4a3, type: 3}
+    placementCost: 200
+    removalReward: 200
   - trapPrefab: {fileID: 8333321840943800612, guid: 38048370a3ee0074f820c55b59931cfb, type: 3}
     placementCost: 300
     removalReward: 300
@@ -72,5 +72,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713d9144be36e9b46a8a9b0d27669f70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentPoints: 10000
+  currentPoints: 1000
   pointsText: {fileID: 0}

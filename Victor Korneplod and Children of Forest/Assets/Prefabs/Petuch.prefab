@@ -5121,7 +5121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba6b3e484a2c0543806e4af2d8728f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxLizardCount: 10
+  MaxLizardCount: 15
   DMG: 1
   effect: {fileID: 6774451645918351887, guid: c779d8ed31ee33947b65e4b9c3d54e8c, type: 3}
   Coc: {fileID: 9165431960266216494}
