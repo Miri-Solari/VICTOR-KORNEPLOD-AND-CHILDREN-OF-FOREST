@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9090449132188433832}
   - component: {fileID: 9090449132188433833}
   m_Layer: 0
-  m_Name: ToMainMenu (1)
+  m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1952,7 +1952,7 @@ GameObject:
   - component: {fileID: 9090449134053636878}
   - component: {fileID: 9090449134053636879}
   - component: {fileID: 9090449134053636872}
-  - component: {fileID: 9090449134053636873}
+  - component: {fileID: 1033316562153526509}
   m_Layer: 0
   m_Name: ToMainMenu
   m_TagString: Untagged
@@ -2063,9 +2063,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9090449134053636873}
-        m_TargetAssemblyTypeName: Exit, Assembly-CSharp
-        m_MethodName: ExitClick
+      - m_Target: {fileID: 1033316562153526509}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2075,7 +2075,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &9090449134053636873
+--- !u!114 &1033316562153526509
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2084,7 +2084,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9090449134053636875}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46aae513bb25fc2418c59f203d5b3c60, type: 3}
+  m_Script: {fileID: 11500000, guid: 64b74d98aa2f406488e67edc02e34c68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &9090449134091609245
