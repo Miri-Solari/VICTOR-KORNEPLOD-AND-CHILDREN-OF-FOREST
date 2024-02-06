@@ -3,5 +3,5 @@ bear N:8,10
 wolf S:8,12
 chicken W:1,13
 kiken E:15,15
-syka N:8,16
+syka N:16,16
 explosion S:15,8
