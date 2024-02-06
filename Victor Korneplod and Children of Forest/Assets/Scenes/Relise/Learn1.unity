@@ -4265,7 +4265,7 @@ PrefabInstance:
       objectReference: {fileID: 949227094}
     - target: {fileID: 8114492846670980785, guid: 2cfcf1d858609d444aab0ae20e6843d7, type: 3}
       propertyPath: startPoints
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8114492846670980787, guid: 2cfcf1d858609d444aab0ae20e6843d7, type: 3}
       propertyPath: m_Name
@@ -10923,6 +10923,10 @@ PrefabInstance:
       propertyPath: pointsText
       value: 
       objectReference: {fileID: 1182937997}
+    - target: {fileID: 7461311444748427584, guid: d822f5c48d68c3741bcfcffb3cb96917, type: 3}
+      propertyPath: currentPoints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7461311444748427613, guid: d822f5c48d68c3741bcfcffb3cb96917, type: 3}
       propertyPath: m_Name
       value: TrapManager

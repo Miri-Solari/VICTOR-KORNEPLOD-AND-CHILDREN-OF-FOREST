@@ -70,6 +70,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 555e0e7eab3db144d9ad17aaab56d3fa, type: 3}
   - {fileID: 8300000, guid: 1813d95559c2fe944a5a27010af86773, type: 3}
   - {fileID: 8300000, guid: 10f2f18c790302249b830228fbe2fbfb, type: 3}
+  - {fileID: 8300000, guid: b54a821f51e83bf46bf84f52c1163e1b, type: 3}
   slowdownFactors:
   - 0.5
   - 0.5
@@ -94,6 +95,7 @@ MonoBehaviour:
   - 1
   - 0.75
   - 0.75
+  - 1
   audioSource: {fileID: 6487453291586339523}
 --- !u!82 &6487453291586339523
 AudioSource:
@@ -107,7 +109,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0

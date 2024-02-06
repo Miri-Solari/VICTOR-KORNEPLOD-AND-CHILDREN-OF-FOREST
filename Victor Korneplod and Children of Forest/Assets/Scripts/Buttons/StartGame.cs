@@ -8,7 +8,13 @@ public class StartGame : MonoBehaviour
     public GameObject Menu;
     void Start()
     {
-        Invoke(nameof(HideImageStart), Delay);
+        if (PAUSEPOCHINKA.HystoryPlayedCount < 1)
+        {
+            SoundManager.Instance.PlaySound(23);
+            Invoke(nameof(HideImageStart), Delay);
+            PAUSEPOCHINKA.HystoryPlayedCount++;
+        }
+        else HideImageStart();
     }
 
     private void HideImageStart()
