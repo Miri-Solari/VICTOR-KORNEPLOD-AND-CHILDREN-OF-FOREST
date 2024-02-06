@@ -79,4 +79,4 @@ MonoBehaviour:
   multi: 1
   Target: {fileID: 0}
   _tile: 20
-  SlowMulti: 0.5
+  SlowMulti: 0.8

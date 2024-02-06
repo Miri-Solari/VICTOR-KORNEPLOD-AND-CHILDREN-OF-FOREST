@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d09c79e83352584ba4caf854fc3b7b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 10
+  time: 20
   multi: 1
   Target: {fileID: 0}
-  _tile: 20
+  _tile: 40

@@ -112,4 +112,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   count: 0
   _minDmg: 1
-  _maxDmg: 5
+  _maxDmg: 25

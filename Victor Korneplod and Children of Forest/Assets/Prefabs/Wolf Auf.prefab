@@ -115,10 +115,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e470c41bcad614dac0c50e0087f036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxLizardCount: 4
+  MaxLizardCount: 3
   DMG: 5
   effect: {fileID: 0}
-  _dmgMulti: 1
+  _dmgMulti: 2
   auf: {fileID: 876734132198562522}
   auf2: {fileID: 1204671437884678193}
   auf3: {fileID: 6580032868017318627}
