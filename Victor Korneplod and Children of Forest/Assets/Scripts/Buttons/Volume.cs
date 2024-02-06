@@ -5,20 +5,15 @@ using UnityEngine.UI;
 
 public class Volume : MonoBehaviour
 {
-    [SerializeField] GameObject source;
-    private AudioSource sourceAudio;
-    private Slider slider;
-    void Awake()
-    {
-        sourceAudio = source.GetComponent<AudioSource>();
-        slider = GetComponent<Slider>();
-        //sourceAudio.volume = 1 - slider.value;
 
-    }
+    [SerializeField] AudioSource sourceAudio;
 
-    private void FixedUpdate()
+    public void Chanched()
     {
+        Slider slider = GetComponent<Slider>();
         sourceAudio.volume = 1 - slider.value;
     }
+
+    
 
 }
