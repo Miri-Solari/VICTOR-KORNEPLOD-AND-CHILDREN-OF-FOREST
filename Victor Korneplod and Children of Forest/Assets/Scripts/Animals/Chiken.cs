@@ -11,7 +11,6 @@ public class Chiken : Animal
     {
         DMG = 0;
         other.GetComponent<Lizard>().HalfHp();
-        base.OnTriggerEnter(other);
 
         if (_currentLizardcount < MaxLizardCount)
         {
@@ -26,6 +25,7 @@ public class Chiken : Animal
         {
             SoundManager.Instance.PlaySound(13);
         }
+        base.OnTriggerEnter(other);
     }
 
     void ResetAttackAnimation()

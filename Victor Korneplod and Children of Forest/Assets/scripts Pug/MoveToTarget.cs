@@ -58,6 +58,7 @@ public class MoveToTarget : MonoBehaviour
                 Time.timeScale = 1.0f;
                 active = false;
                 agent.destination = startPosition;
+                SoundManager.Instance.PlaySound(16);
                 yield break;
             }
 

@@ -60,18 +60,20 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 742396d8d95eced4ebd57b8f6b661ae8, type: 3}
   - {fileID: 8300000, guid: 742396d8d95eced4ebd57b8f6b661ae8, type: 3}
   - {fileID: 8300000, guid: 742396d8d95eced4ebd57b8f6b661ae8, type: 3}
+  - {fileID: 8300000, guid: 4444eaf4b9193d546895301584b65430, type: 3}
   - {fileID: 8300000, guid: 742396d8d95eced4ebd57b8f6b661ae8, type: 3}
   - {fileID: 8300000, guid: 742396d8d95eced4ebd57b8f6b661ae8, type: 3}
-  - {fileID: 8300000, guid: 742396d8d95eced4ebd57b8f6b661ae8, type: 3}
-  - {fileID: 8300000, guid: 742396d8d95eced4ebd57b8f6b661ae8, type: 3}
+  - {fileID: 8300000, guid: 488868cad03587742ad144d3c17f7f23, type: 3}
   - {fileID: 8300000, guid: a92fcd8052354f346a45c34b0dc58265, type: 3}
   - {fileID: 8300000, guid: 151835c16bef98146895e986dc7df904, type: 3}
   - {fileID: 8300000, guid: a596f11a8b7119241b26aa72b71fd5e2, type: 3}
   - {fileID: 8300000, guid: 555e0e7eab3db144d9ad17aaab56d3fa, type: 3}
+  - {fileID: 8300000, guid: 1813d95559c2fe944a5a27010af86773, type: 3}
+  - {fileID: 8300000, guid: 10f2f18c790302249b830228fbe2fbfb, type: 3}
   slowdownFactors:
   - 0.5
   - 0.5
-  - 0.05
+  - 0.2
   - 0.5
   - 0.5
   - 0.5
@@ -88,6 +90,10 @@ MonoBehaviour:
   - 1
   - 1
   - 1
+  - 1
+  - 1
+  - 0.75
+  - 0.75
   audioSource: {fileID: 6487453291586339523}
 --- !u!82 &6487453291586339523
 AudioSource:
