@@ -27,7 +27,7 @@ public class BombScript : MonoBehaviour
             destroy = true;
             SoundManager.Instance.PlayAttackSound(14);
             explosion.Play();
-            Debug.Log("penis");
+            //Debug.Log("penis");
             Bomb.transform.localScale = Vector3.zero;
             Invoke("Destroy", 1f);
         }

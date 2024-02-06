@@ -26,20 +26,21 @@ public class Bear : Animal
             DMG *= _dmgMiltiDist;
         }
 
+        base.OnTriggerEnter(other);
 
-        if (_currentLizardcount < 1)
+        if (_currentLizardcount - 1  < 1)
         {
             int randomNumber = Random.Range(1, 3);
             if (randomNumber == 1) SoundManager.Instance.PlaySound(3);
             if (randomNumber == 2) SoundManager.Instance.PlaySound(4);
         }
 
+
         if (_currentLizardcount < MaxLizardCount && RuR != null && !RuR.GetBool("attack"))
         {
             StartCoroutine(TriggerAttackAnimation());
         }
 
-        base.OnTriggerEnter(other);
     }
 
     private IEnumerator TriggerAttackAnimation()
