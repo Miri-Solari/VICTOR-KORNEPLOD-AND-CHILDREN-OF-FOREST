@@ -111,5 +111,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   count: 0
-  _dmg: 1
-  _maxLizardCount: 5
+  _dmg: 10
+  _maxLizardCount: 3

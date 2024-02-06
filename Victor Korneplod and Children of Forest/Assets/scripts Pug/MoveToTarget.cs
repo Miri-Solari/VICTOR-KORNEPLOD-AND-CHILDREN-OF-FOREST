@@ -50,7 +50,7 @@ public class MoveToTarget : MonoBehaviour
                 yield break;
             }
 
-            if (Time.time - startTime > 480f) 
+            if (Time.time - startTime > 1000f) 
             {
                 Time.timeScale = 1.0f; 
                 agent.destination = startPosition;

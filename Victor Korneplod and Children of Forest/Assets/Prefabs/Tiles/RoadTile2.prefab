@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d61d3eab991a8f42b28fde81da6a03b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  replacementPrefab: {fileID: 5600202819879652405, guid: c8f1b43b8f2bcec46b84a16a40f1444f, type: 3}
+  replacementPrefab: {fileID: 5600202819879652405, guid: bf0a9635dd9a1e845b30c901b845b63f, type: 3}
   pointsEarned: 1
 --- !u!1001 &3971819620782467538
 PrefabInstance:

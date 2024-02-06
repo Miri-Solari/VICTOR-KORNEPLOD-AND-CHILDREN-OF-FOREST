@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4834a9797d648a8498916021dbc6ab0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  replacementPrefab: {fileID: 3856916929230660069, guid: 344ab787595e0894cb6e270733e1648f, type: 3}
+  replacementPrefab: {fileID: 3856916929230660069, guid: 000de93b05053c14ebefe7960453094d, type: 3}
   pointsCost: 1
 --- !u!1 &6660922852511950342
 GameObject:

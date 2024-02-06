@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxLizardCount: 10
-  DMG: 1
+  DMG: 0
   effect: {fileID: 0}
   animator: {fileID: 4247371541394347383}
 --- !u!1 &4266664740390070280
