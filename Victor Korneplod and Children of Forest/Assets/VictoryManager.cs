@@ -25,7 +25,7 @@ public class VictoryManager : MonoBehaviour
 
     public void Lose()
     {
-        SoundManager.Instance.PlaySound(Random.Range(17, 19));
+        SoundManager.Instance.PlayAttackSound(Random.Range(17, 19));
 
     }
 }
