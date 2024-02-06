@@ -6,7 +6,7 @@ public class Rooster : MonoBehaviour
 {
     public ParticleSystem roar;
 
-    public void Punch(string type)
+    public void Roar(string type)
     {
         if (type == "Pre")
         {

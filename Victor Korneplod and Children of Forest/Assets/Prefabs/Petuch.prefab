@@ -41,7 +41,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611883634241308088}
   serializedVersion: 8
-  lengthInSec: 0.6
+  lengthInSec: 0.4
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -5583,7 +5583,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roar: {fileID: 9181654095772385171}
-  main: 0
 --- !u!4 &3013483307663085140 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95b31f2a494ddf146abbcc2568911a76, type: 3}
