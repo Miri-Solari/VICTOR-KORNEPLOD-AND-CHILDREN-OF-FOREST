@@ -61,7 +61,7 @@ public class ForestGen : MonoBehaviour
                 }
             }
 
-            Debug.Log(SplitLog[0] + "|" + SplitLog[2] + "|" + SplitLog[3] + "|");
+            //Debug.Log(SplitLog[0] + "|" + SplitLog[2] + "|" + SplitLog[3] + "|");
 
             var b = Instantiate(AnimalPrefab[AnimalID[SplitLog[0]]]);
             if (SplitLog[1] == "N")
