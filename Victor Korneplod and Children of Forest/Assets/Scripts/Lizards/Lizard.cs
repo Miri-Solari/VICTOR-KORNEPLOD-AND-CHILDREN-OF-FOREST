@@ -3,8 +3,8 @@ using UnityEngine.AI;
 
 public class Lizard : MonoBehaviour
 {
-    [SerializeField] float HP = 10;
-    private float MaxHP = 10;
+    [SerializeField] float HP = 100;
+    private float MaxHP = 100;
     public Animator jasher;
     
     internal void TakeDamege(float damege)

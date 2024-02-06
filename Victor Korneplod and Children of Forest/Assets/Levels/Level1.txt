@@ -6,7 +6,7 @@ bear W:6,15
 bear S:12,1
 wolf S:5,7
 wolf N:6,3
-wolf S:8,10
+wolf S:8,11
 wolf N:8,13
 wolf E:11,7
 chicken S:15,14
