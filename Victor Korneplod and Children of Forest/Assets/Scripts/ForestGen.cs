@@ -8,7 +8,6 @@ public class ForestGen : MonoBehaviour
     public TextAsset LevelLog;
     public Vector2 Dimesions;
     public GameObject[] TreePrefabs;
-    public int[] TreePriority;
     public GameObject[] AnimalPrefab;
     public List<Vector2> exeptions;
 
