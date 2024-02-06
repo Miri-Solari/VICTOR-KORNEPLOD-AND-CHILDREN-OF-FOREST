@@ -1,0 +1,10 @@
+bear - медведь, wolf- волки, chiken - курица, kiken - петух, syka - барсук, explosion - белки. N - с севера, S - с юга, W- с запада, E - с востока.
+bear S:6,11
+bear W:6,4
+wolf S:10,10
+wolf E:13,9
+kiken W:4,13
+kiken N:6,2
+chicken N:10,3
+syka E:12,13
+explosion S:6,9
