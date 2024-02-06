@@ -58,8 +58,8 @@ public class MainCameraControl : MonoBehaviour
                 rotY = Mathf.Clamp(rotY, -90, 90);
                 //Debug.Log(mainCamera.transform.localEulerAngles.x);
 
-                if (-rotY >= 145) rotY = -144;
-                else if (-rotY <= 35) rotY = -36;
+                if (-rotY >= 160) rotY = -159.95f;
+                else if (-rotY <= 20) rotY = -19.95f;
                 //if (-rotY < 145 && -rotY > 35)
                 mainCamera.transform.localEulerAngles = new Vector3(-rotY, rotX, 0);
             }
