@@ -27,7 +27,7 @@ public class ReplaceOnClick : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !isTemporarilyBlocked && !isPermanentlyBlocked && !PAUSEPOCHINKA.ISPAUSED && !EventSystem.current.IsPointerOverGameObj)
+        if (Input.GetMouseButtonDown(0) && !isTemporarilyBlocked && !isPermanentlyBlocked && !PAUSEPOCHINKA.ISPAUSED && !EventSystem.current.IsPointerOverGameObject())
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;

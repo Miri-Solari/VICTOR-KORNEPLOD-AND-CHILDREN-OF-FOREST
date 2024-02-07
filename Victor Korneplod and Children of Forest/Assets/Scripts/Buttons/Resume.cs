@@ -8,6 +8,13 @@ public class Resume : MonoBehaviour
     public GameObject CurrentMenu;
     public AudioSource Sound;
 
+    private void LateUpdate()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (PAUSEPOCHINKA.ISPAUSED) Click();
+        }
+    }
     public void Click()
     {
         CurrentMenu.SetActive(true);

@@ -14,6 +14,7 @@ public class PreviousLVL : MonoBehaviour
         string sceneName = currentScene.name;
         int sceneNum = Convert.ToInt32(Regex.Match(sceneName, @"\d+").Value);
         Time.timeScale = 1f;
+        PAUSEPOCHINKA.ISPAUSED = false;
         SceneManager.LoadScene($"LVL{sceneNum - 1}");
     }
 }

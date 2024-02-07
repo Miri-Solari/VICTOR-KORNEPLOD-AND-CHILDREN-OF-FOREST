@@ -23,12 +23,12 @@ public class SoundManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+    
     public void PlaySound(int index)
     {
         if (index >= 0 && index < sounds.Length && index < slowdownFactors.Length && !isSoundPlaying)
         {
-            StartCoroutine(PlaySoundRoutine(sounds[index], slowdownFactors[index]));
+            StartCoroutine(PlaySoundRoutine(sounds[index], Time.timeScale*slowdownFactors[index]));
         }
         
         else

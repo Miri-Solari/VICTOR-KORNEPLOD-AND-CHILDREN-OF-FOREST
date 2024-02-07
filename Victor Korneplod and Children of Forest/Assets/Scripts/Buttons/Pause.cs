@@ -7,6 +7,15 @@ public class Pause : MonoBehaviour
     public GameObject PauseMenu;
     public GameObject CurrentMenu;
     public AudioSource Sound;
+
+
+    private void LateUpdate()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!PAUSEPOCHINKA.ISPAUSED) Click();
+        }
+    }
     public void Click()
     {
         PauseMenu.SetActive(true);
