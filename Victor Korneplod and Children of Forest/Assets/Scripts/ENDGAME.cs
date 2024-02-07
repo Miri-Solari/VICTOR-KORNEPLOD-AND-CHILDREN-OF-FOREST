@@ -5,7 +5,8 @@ using UnityEngine;
 public class ENDGAME : MonoBehaviour
 {
     public static bool EndGame = false;
-    public GameObject Manager;
+    public GameObject Manager;  
+
     private void OnTriggerEnter(Collider other)
     {
         if (!EndGame)

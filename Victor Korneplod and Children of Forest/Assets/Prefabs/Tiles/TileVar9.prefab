@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1387288899450934922}
   - component: {fileID: 6114050740498834819}
   - component: {fileID: 2948844260151893098}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 8302209242638039966}
   - component: {fileID: 2791594709666000288}
   - component: {fileID: 6594524905397853907}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 8921234064327112174}
   - component: {fileID: 2734877428165828383}
   - component: {fileID: 7311535979159464441}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 5600202819879652403}
   - component: {fileID: 5600202819879652404}
   - component: {fileID: 5600202819879652400}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TileVar9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -397,8 +397,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 5.41, z: 1}
-  m_Center: {x: 0, y: 0.88, z: 0}
+  m_Size: {x: 1, y: 0.94438845, z: 1}
+  m_Center: {x: 0, y: 0.029989988, z: 0}
 --- !u!114 &5600202819879652400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 604536026090395852}
   - component: {fileID: 5193328337220902613}
   - component: {fileID: 7170081879935665919}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -581,6 +581,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: buc
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c5adbc18fdafea245ab14ba51fe6e8a7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: c5adbc18fdafea245ab14ba51fe6e8a7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5adbc18fdafea245ab14ba51fe6e8a7, type: 3}
 --- !u!4 &751467607808862023 stripped
@@ -658,6 +666,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b9dbc5321386c9f4ba82a9a170c5a0aa, type: 3}
       propertyPath: m_Name
       value: elka
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b9dbc5321386c9f4ba82a9a170c5a0aa, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: b9dbc5321386c9f4ba82a9a170c5a0aa, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9dbc5321386c9f4ba82a9a170c5a0aa, type: 3}
@@ -737,6 +753,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: beresa
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ddacd2ef7df492242a0c6107d401552c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: ddacd2ef7df492242a0c6107d401552c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddacd2ef7df492242a0c6107d401552c, type: 3}
 --- !u!4 &1911084111925084720 stripped
@@ -810,6 +834,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d48645c618e2c3b4baefa96889262aff, type: 3}
       propertyPath: m_Name
       value: stone2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d48645c618e2c3b4baefa96889262aff, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: d48645c618e2c3b4baefa96889262aff, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d48645c618e2c3b4baefa96889262aff, type: 3}
@@ -885,6 +917,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: grib2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a4537f9771eed544da4a96f6de2f7e88, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: a4537f9771eed544da4a96f6de2f7e88, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4537f9771eed544da4a96f6de2f7e88, type: 3}
 --- !u!4 &8179220856259045085 stripped
@@ -958,6 +998,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 970a5efcf76dbcc4f85e56579e915c6c, type: 3}
       propertyPath: m_Name
       value: grib
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 970a5efcf76dbcc4f85e56579e915c6c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 970a5efcf76dbcc4f85e56579e915c6c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 970a5efcf76dbcc4f85e56579e915c6c, type: 3}

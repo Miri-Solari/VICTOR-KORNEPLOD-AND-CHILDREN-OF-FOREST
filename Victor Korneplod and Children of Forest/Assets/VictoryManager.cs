@@ -50,7 +50,7 @@ public class VictoryManager : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
-
+        ENDGAME.EndGame 
         SceneManager.LoadScene(sceneName);
     }
 
