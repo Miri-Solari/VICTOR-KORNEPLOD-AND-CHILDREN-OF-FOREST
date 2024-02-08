@@ -3865,6 +3865,10 @@ PrefabInstance:
       value: Lizard (4)
       objectReference: {fileID: 0}
     - target: {fileID: 4755540263779649925, guid: 7762fcbcdf2ad434aa51e4b60adf878f, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 928322505}
+    - target: {fileID: 4755540263779649925, guid: 7762fcbcdf2ad434aa51e4b60adf878f, type: 3}
       propertyPath: IsInCharge
       value: 1
       objectReference: {fileID: 0}
@@ -5246,6 +5250,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28953f8e9cb77324cbcf35a2ec1189ef, type: 3}
+--- !u!4 &928322505 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3673717106441014965, guid: 28953f8e9cb77324cbcf35a2ec1189ef, type: 3}
+  m_PrefabInstance: {fileID: 928322504}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &934884523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6e996eca277fa5446b6fe88d9ad7988f, type: 3}
@@ -9409,6 +9418,10 @@ PrefabInstance:
       propertyPath: speed
       value: 3.5
       objectReference: {fileID: 0}
+    - target: {fileID: 733101852586785392, guid: 691fe38be2fb6fc4bba14a97634cd366, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 928322505}
     - target: {fileID: 733101852586785392, guid: 691fe38be2fb6fc4bba14a97634cd366, type: 3}
       propertyPath: UIbuttons
       value: 
