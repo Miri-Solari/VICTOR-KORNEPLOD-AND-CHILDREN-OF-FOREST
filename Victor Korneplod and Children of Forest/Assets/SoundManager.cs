@@ -57,7 +57,7 @@ public class SoundManager : MonoBehaviour
         {
             yield return new WaitForSecondsRealtime(0.1f);
         }
-        Time.timeScale = 1f;
+        Time.timeScale = 1f * slowdownFactor;
         yield return new WaitForSecondsRealtime(1f);
 
         isSoundPlaying = false;
