@@ -51,6 +51,7 @@ public class VictoryManager : MonoBehaviour
         string sceneName = currentScene.name;
 
         ENDGAME.EndGame = false;
+        Time.timeScale = 1f;
         SceneManager.LoadScene(sceneName);
     }
 
@@ -59,6 +60,8 @@ public class VictoryManager : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
         int sceneNum = Convert.ToInt32(Regex.Match(sceneName, @"\d+").Value);
+        ENDGAME.EndGame = false;
+        Time.timeScale = 1f;
         if (LastLVL.Lastlvl || sceneName == "Learn2")
         {
             SceneManager.LoadScene("MainMenu");

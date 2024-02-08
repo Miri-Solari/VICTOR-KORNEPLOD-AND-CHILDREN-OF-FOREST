@@ -28,7 +28,7 @@ public class SoundManager : MonoBehaviour
     {
         if (index >= 0 && index < sounds.Length && index < slowdownFactors.Length && !isSoundPlaying)
         {
-            StartCoroutine(PlaySoundRoutine(sounds[index], Time.timeScale*slowdownFactors[index]));
+            StartCoroutine(PlaySoundRoutine(sounds[index], slowdownFactors[index]));
         }
         
         else
@@ -49,7 +49,7 @@ public class SoundManager : MonoBehaviour
     private IEnumerator PlaySoundRoutine(AudioClip clip, float slowdownFactor)
     {
         isSoundPlaying = true;
-        Time.timeScale = slowdownFactor;
+        Time.timeScale = slowdownFactor*Speed.TimeSpeed;
         audioSource.PlayOneShot(clip);
         float waitTime = clip.length;
         yield return new WaitForSecondsRealtime(waitTime);
@@ -57,7 +57,7 @@ public class SoundManager : MonoBehaviour
         {
             yield return new WaitForSecondsRealtime(0.1f);
         }
-        Time.timeScale = 1f * slowdownFactor;
+        Time.timeScale = 1f * Speed.TimeSpeed;
         yield return new WaitForSecondsRealtime(1f);
 
         isSoundPlaying = false;
